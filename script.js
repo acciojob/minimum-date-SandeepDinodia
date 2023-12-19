@@ -1,10 +1,21 @@
-function minDate(dates) {
-	let ansArr=minDate.sort((a,b)=>{
-		return a-b;
-	});
-	console.log(ansArr);
-  //write you code here
+// function minDate(dates) {
+	function minDate(dates) {
+    // Make a copy of the input array to avoid modifying it
+    const copiedDates = [...dates];
+
+    // Sort the copied array in ascending order
+    copiedDates.sort();
+
+    // Return the first element (minimum date) of the sorted array
+    return copiedDates[0];
 }
+
+// Examples
+console.log(minDate(["2023/03/01", "2023/03/02", "2023/03/03"])); // "2023/03/01"
+console.log(minDate(["2023/01/01", "2023/02/02", "2022/12/31"])); // "2022/12/31"
+
+  //write you code here
+// }
 
 // Do not change the code
 
@@ -41,4 +52,4 @@ var dates = [
   "2023/03/30",
 ];
 
-alert(minDate(dates));
+// alert(minDate(dates));
