@@ -1,4 +1,8 @@
 function minDate(dates) {
+	let ansArr=minDate.sort((a,b)=>{
+		return a-b;
+	});
+	console.log(ansArr);
   //write you code here
 }
 
